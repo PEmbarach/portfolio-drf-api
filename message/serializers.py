@@ -5,5 +5,5 @@ class MessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = message
         fields = [
-            'name', 'email', 'company', 'message',
+            'id','name', 'email', 'company', 'message',
         ]
