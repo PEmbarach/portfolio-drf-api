@@ -1,2 +1,2 @@
 release: python manage.py makemigrations && python manage.py migrate
-web: gunicorn portfolio-peb-api.wsgi
+web: gunicorn portfolio.wsgi
