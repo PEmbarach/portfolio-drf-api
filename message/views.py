@@ -7,4 +7,5 @@ class MessageList(generics.ListCreateAPIView):
     queryset = message.objects.all()
     serializer_class = MessageSerializer
     authentication_classes = [authentication.BasicAuthentication]
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
+
